@@ -5,95 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: #f7f7f7;
-        }
         
-        #containerr{
-          display: flex;
-          flex-wrap: wrap;
-          width: 100%;
-          height: 3000px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+}
 
-        }
-        
-        #box {
-          width: 28% ;
-          background-color: #fff;
-          padding: 20px;
-          margin: 12px;
-          border-radius: 5px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          display: grid;
-          justify-items: center;
-          align-content: space-around;
-          height:80vh;
-          text-align: center;
-  
-        }
+#containerr {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 3000px;
+}
 
-        #imgg{
-            width: 25vh;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
-        }
+#box {
+  width: 28%;
+  background-color: #fff;
+  padding: 20px;
+  margin: 12px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: grid;
+  justify-items: center;
+  align-content: space-around;
+  height: 80vh;
+  text-align: center;
+}
 
-        #h3{
-            font-family: 'Indie Flower', cursive;; font-size: xx-large;
-        }
+#imgg {
+  width: 25vh;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.9);
+}
 
-        .navbar {
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        border-radius: 12px;
-        margin-top: 8px;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
+#h3 {
+  font-family: 'Indie Flower', cursive;
+  font-size: xx-large;
+}
 
-        .logo {
-        width: 7%;
-        margin:5px;
+.navbar {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        }   
+.logo {
+  width: 7%;
+  margin: 5px;
+}
 
-        .navbarul {
-        list-style: none;
+.navbarul {
+  list-style: none;
+}
 
-        }
+.navbarul li {
+  display: inline-block;
+  margin-left: 10px;
+}
 
-        .navbarul li {
-        display: inline-block;
-        margin-left: 10px;
-   
-        }
+.navbarul li a {
+  color: #333;
+  text-decoration: none;
+  transition: 0.9s ease;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-        .navbarul li a {
-        color: #333;
-        text-decoration: none;
-        transition: 0.9s ease;
-        cursor: pointer;
+.navbarul li a:hover {
+  color: #a6a4a4;
+  padding: 10px;
+  border-radius: 15%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
-        }
+.navbar li a img {
+  width: 24px;
+  margin-right: 2px;
+}
 
-        .navbarul li a:hover {
-        color: #666666;
-        padding: 10px;
-        border-radius: 2%;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+@media (min-width: 768px) and (max-width: 1200px) {
+  #box {
+    width: 35%;
+  }
+  .logo {
+    width: 10%;
+  }
+}
 
-        }
-
-        .navbar li a img {
-        width: 24px;
-        margin-right:2px;
-
-        }
-
+@media (max-width: 768px) {
+  #containerr {
+    flex-direction: column;
+  }
+  #box {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+  .logo {
+    width: 20%;
+  }
+  .navbarul {
+    flex-direction: column;
+  }
+  .navbarul li {
+    margin: 10px;
+  }
+}
  </style>
 </head>
 <body>
